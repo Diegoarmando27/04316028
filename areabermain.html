@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <script src="js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="desain.css">
+
+    <style media="screen">
+        .kotak {
+            height: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2" style="background-color:#FFFF5A">
+                <a href="learn.html">
+                    <center><img src="img/bojonegoro.png" width="90" height="110"></a>
+                <br>KOTA TAYUB</center>
+            </div>
+            <div class="col-sm-10" style="background-color:#FF9300;">
+                <div class="row" style="height: 59px;">
+                    <marquee><b><h3>SELAMAT DATANG DI BOJONEGORO</h3></b></marquee>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3" style="background-color:red">
+                      <ul>
+                        <h1>
+                      		<li><a href="wisata.html">Wisata</a></li>
+                      	</h1>
+                      </ul>
+                    </div>
+                    <div class="col-sm-3" style="background-color:red">
+                      <ul>
+                        <h1>
+                      		<li><a href="kuliner.html">Kuliner</a></li>
+                        </h1>
+                      </ul>
+                    </div>
+                    <div class="col-sm-3" style="background-color:red">
+                      <ul>
+                        <h1>
+                          <li><a href="contact.html">Contact</a></li>
+                        </h1>
+                      </ul>
+                    </div>
+										<div class="col-sm-3" style="background-color:red">
+											<ul>
+												<h1><li><a href="areabermain.html">Area Bermain</a></li></h1>
+											</ul>
+										</div>
+                </div>
+            </div>
+
+            <p>Click the button to get a time-based greeting:</p>
+
+        <button onclick="myFunction()">Try it</button>
+
+        <p id="demo"></p>
+
+        <script>
+        function myFunction() {
+            var greeting;
+            var time = new Date().getHours();
+            if (time < 10) {
+                greeting = "Good morning";
+            } else if (time < 20) {
+                greeting = "Good day";
+            } else {
+                greeting = "Good evening";
+            }
+        document.getElementById("demo").innerHTML = greeting;
+        }
+        </script>
+    </html>
